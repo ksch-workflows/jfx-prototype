@@ -1,7 +1,12 @@
-# JavaFX-Point-of-Sales
-Point of Sales with inventory management system 
+# K.S.C.H. Workflows - Clinical Service
+Prototype for a JavaFX application supporting the clinical service of the Kirpal Sagar Charitable Hospital.
 
+## License
 The MIT License (MIT)
+
+Copyright (c) 2017 Jan Mewes
+
+Copyright (c) 2017 Rafsanjani
 
 Copyright (c) 2013 Thomas Park
 

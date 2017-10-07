@@ -8,12 +8,12 @@
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/inventory</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.current_session_context_class">thread</property>
-        <mapping class="com.rafsan.inventory.entity.Category"/>
-        <mapping class="com.rafsan.inventory.entity.Employee"/>
-        <mapping class="com.rafsan.inventory.entity.Invoice"/>
-        <mapping class="com.rafsan.inventory.entity.Product"/>
-        <mapping class="com.rafsan.inventory.entity.Purchase"/>
-        <mapping class="com.rafsan.inventory.entity.Sale"/>
-        <mapping class="com.rafsan.inventory.entity.Supplier"/>
+        <mapping class="com.experimental.category.Category"/>
+        <mapping class="com.experimental.employee.Employee"/>
+        <mapping class="com.experimental.sales.Invoice"/>
+        <mapping class="com.experimental.product.Product"/>
+        <mapping class="com.experimental.purchase.Purchase"/>
+        <mapping class="com.experimental.sales.Sale"/>
+        <mapping class="com.experimental.supplier.Supplier"/>
     </session-factory>
 </hibernate-configuration>
