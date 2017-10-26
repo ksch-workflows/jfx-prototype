@@ -7,7 +7,6 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        mavenLocal()
     }
 }
 
@@ -28,6 +27,6 @@ dependencies {
 }
 
 jfx {
-    mainClass = 'io.github.kschworkflows.HelloWorld'
+    mainClass = 'io.github.kschworkflows.ui.Start'
     vendor = 'Experimental Software'
 }
