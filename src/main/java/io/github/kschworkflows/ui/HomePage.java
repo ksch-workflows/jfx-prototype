@@ -4,6 +4,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
@@ -12,12 +14,12 @@ import javafx.scene.text.FontWeight;
 
 public class HomePage extends Page {
 
-    public HomePage(ClinicalServiceApp application) {
+    public HomePage(ClinicalServiceApplication application) {
         super(application);
     }
 
     @Override
-    public Pane getPageContents() {
+    public Pane getContents() {
         Label title = new Label("K.S.C.H. Workflows - Clinical Service");
         title.setFont(Font.font("Tahoma", FontWeight.BOLD, 25));
         title.setPadding(new Insets(10, 50, 10, 50));
