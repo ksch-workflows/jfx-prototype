@@ -44,7 +44,7 @@ public class PatientServiceImplTest {
     }
 
     @Test
-    public void should_parse_first_and_last_name_from_display() {
+    public void should_parse_patient_details_from_display_text() {
 
         // GIVEN
         com.experimental.openmrs.Patient openMRSPatient = createPatient("GAN203007 - John Doe");
@@ -55,6 +55,7 @@ public class PatientServiceImplTest {
         // THEN
         assertEquals("John", transformedPatient.getFirstName());
         assertEquals("Doe", transformedPatient.getLastName());
+        assertEquals("GAN203007", transformedPatient.getId());
     }
 
     private List<com.experimental.openmrs.Patient> getTestPatients() {

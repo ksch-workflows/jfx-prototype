@@ -11,6 +11,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 
+import java.util.List;
+
 public class RegistrationPage extends Page {
 
     private PatientService patientService = PatientServiceFactory.getPatientService();
@@ -20,7 +22,12 @@ public class RegistrationPage extends Page {
     public RegistrationPage(ClinicalServiceApplication application) {
         super(application);
 
-        System.out.println("Number of patients with name 'Doe': " + patientService.findPatients("Doe").size());
+        displaySearchResults("Doe");
+    }
+
+    private void displaySearchResults(String patientNameOrId) {
+        patients.clear();
+        patientService.findPatients("Doe").forEach(p -> patients.add(new PatientProperty(p)));
     }
 
     @Override
@@ -38,8 +45,8 @@ public class RegistrationPage extends Page {
         patientIdColumn.setCellValueFactory(cell -> cell.getValue().idProperty());
 
         TableColumn<PatientProperty, String> patientNameColumn = new TableColumn<>("Name");
-        patientIdColumn.setMinWidth(30);
-        patientIdColumn.setCellValueFactory(cell -> cell.getValue().displayNameProperty());
+        patientNameColumn.setMinWidth(30);
+        patientNameColumn.setCellValueFactory(cell -> cell.getValue().displayNameProperty());
 
         TableView<PatientProperty> tableView = new TableView<>(patients);
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);

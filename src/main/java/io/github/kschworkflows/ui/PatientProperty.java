@@ -1,6 +1,6 @@
 package io.github.kschworkflows.ui;
 
-import com.experimental.openmrs.Patient;
+import io.github.kschworkflows.services.Patient;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -10,8 +10,8 @@ public class PatientProperty {
     private final StringProperty displayName = new SimpleStringProperty();
 
     public PatientProperty(Patient patient) {
-        setId(patient.getUuid());
-        setDisplayName(patient.getDisplay());
+        setId(patient.getId());
+        setDisplayName(String.format("%s %s", patient.getFirstName(), patient.getLastName()));
     }
 
     public StringProperty idProperty() {

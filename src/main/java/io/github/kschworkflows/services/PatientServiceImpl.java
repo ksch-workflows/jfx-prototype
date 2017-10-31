@@ -31,7 +31,11 @@ public class PatientServiceImpl implements PatientService {
             p.setLastName(openMRSPatient.getPerson().getPreferredName().getFamilyName());
         } else {
             String display = checkNotNull(openMRSPatient.getDisplay());
-            String[] names = display.split(" - ")[1].split(" ");
+            String[] displayParts = display.split(" - ");
+
+            p.setId(display.split(" - ")[0]);
+
+            String[] names = displayParts[1].split(" ");
             p.setFirstName(names[0]);
             p.setLastName(names[1]);
         }
