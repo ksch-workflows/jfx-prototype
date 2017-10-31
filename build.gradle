@@ -13,7 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'javafx-gradle-plugin'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.9
 
 repositories {
     mavenCentral()
@@ -28,6 +28,6 @@ dependencies {
 }
 
 jfx {
-    mainClass = 'io.github.kschworkflows.ui.Start'
+    mainClass = 'io.github.kschworkflows.ui.ClinicalServiceApplication'
     vendor = 'Experimental Software'
 }
