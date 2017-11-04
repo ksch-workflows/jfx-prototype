@@ -12,6 +12,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'javafx-gradle-plugin'
+apply plugin: 'idea'
 
 sourceCompatibility = 1.9
 
