@@ -1,34 +1,17 @@
-group 'io.github.ksch-workflows'
-version '0.1-SNAPSHOT'
 
-buildscript {
-    dependencies {
-        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.0'
-    }
+allprojects {
+    group 'io.github.ksch-workflows'
+    version '0.1-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    task allDeps(type: DependencyReportTask) {}
+
     repositories {
         mavenCentral()
+        mavenLocal()
     }
 }
 
-apply plugin: 'java'
-apply plugin: 'javafx-gradle-plugin'
 apply plugin: 'idea'
-
-sourceCompatibility = 1.9
-
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
-
-dependencies {
-    compile group: 'com.experimental', name: 'openmrs-java-client', version:'+'
-
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
-}
-
-jfx {
-    mainClass = 'io.github.kschworkflows.ui.ClinicalServiceApplication'
-    vendor = 'Experimental Software'
-}

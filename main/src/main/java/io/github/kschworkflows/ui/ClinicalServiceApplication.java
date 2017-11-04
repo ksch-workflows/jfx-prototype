@@ -1,6 +1,7 @@
 package io.github.kschworkflows.ui;
 
 import io.github.kschworkflows.services.LoginCredentials;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
@@ -31,6 +32,10 @@ public class ClinicalServiceApplication extends Application {
         primaryStage.setTitle("K.S.C.H. Workflows - Clinical Service");
         setScene(new HomePage(this));
         primaryStage.show();
+
+
+
+
     }
 
     public void setScene(Page page) {

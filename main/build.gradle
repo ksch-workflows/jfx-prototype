@@ -1,0 +1,23 @@
+apply plugin: 'javafx-gradle-plugin'
+
+buildscript {
+    dependencies {
+        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.0'
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile project(':openmrs-adapter')
+}
+
+jfx {
+    mainClass = 'io.github.kschworkflows.ui.ClinicalServiceApplication'
+    vendor = 'Experimental Software'
+}
+
+
+sourceCompatibility = 1.9
+
