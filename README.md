@@ -8,9 +8,10 @@ java -jar ./main/build/jfx/app/project-jfx.jar
 ```
 
 ## References
-The following resources are useful to understand the Why and How for the source code in this repository.
+The following resources are recommended from an understanding of the Why and How within in this project.
 
 ### Architecture
+- [[Article] Hexagonal architecture -- Alistair Cockburn](http://alistair.cockburn.us/Hexagonal+architecture)
 - [[Blog] Whoops! Where did my architecture go -- Oliver Gierke](http://olivergierke.de/2013/01/whoops-where-did-my-architecture-go/)
 - [[Talk] GOTO 2016 • Whoops! Where Did My Architecture Go? -- Oliver Gierke](https://www.youtube.com/watch?v=v1XIcgFUIEw)
 
