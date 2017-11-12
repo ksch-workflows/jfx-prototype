@@ -1,7 +1,8 @@
-package io.github.kschworkflows.ui;
+package io.github.kschworkflows;
 
-import io.github.kschworkflows.services.LoginCredentials;
-
+import io.github.kschworkflows.openmrs.CustomizedOpenMRS;
+import io.github.kschworkflows.common.ui.Page;
+import io.github.kschworkflows.login.HomePage;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
@@ -13,10 +14,7 @@ public class ClinicalServiceApplication extends Application {
     public static final double INITIAL_STAGE_WIDTH = 1000;
     public static final double INITIAL_STAGE_HEIGTH = 500;
 
-    private LoginCredentials loginCredentials = LoginCredentials.getInstance();
-
     private Stage primaryStage;
-
     private Scene currentScene;
 
     public static void main(String[] args) {
@@ -32,10 +30,6 @@ public class ClinicalServiceApplication extends Application {
         primaryStage.setTitle("K.S.C.H. Workflows - Clinical Service");
         setScene(new HomePage(this));
         primaryStage.show();
-
-
-
-
     }
 
     public void setScene(Page page) {
@@ -51,8 +45,6 @@ public class ClinicalServiceApplication extends Application {
     }
 
     private void setLoginCredentials() {
-        loginCredentials.setOpenMRSUrl("https://ksch/openmrs");
-        loginCredentials.setUserName("superman");
-        loginCredentials.setPassword("Admin123");
+        CustomizedOpenMRS.init("https://ksch/openmrs", "superman", "Admin123");
     }
 }

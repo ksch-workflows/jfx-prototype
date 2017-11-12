@@ -1,7 +1,10 @@
-package io.github.kschworkflows.ui;
+package io.github.kschworkflows.registration;
 
-import io.github.kschworkflows.services.PatientService;
-import io.github.kschworkflows.services.PatientServiceFactory;
+import io.github.kschworkflows.ClinicalServiceApplication;
+import io.github.kschworkflows.patient.PatientService;
+import io.github.kschworkflows.patient.PatientServiceFactory;
+import io.github.kschworkflows.login.HomePage;
+import io.github.kschworkflows.common.ui.Page;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Button;
@@ -10,8 +13,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
-
-import java.util.List;
 
 public class RegistrationPage extends Page {
 

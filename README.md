@@ -8,4 +8,14 @@ java -jar ./main/build/jfx/app/project-jfx.jar
 ```
 
 ## References
-- [Getting Started With Gradle: Creating a Multi-Project Build -- Petri Kainulainen](https://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-multi-project-build/)
+The following resources are useful to understand the Why and How for the source code in this repository.
+
+### Architecture
+- [[Blog] Whoops! Where did my architecture go -- Oliver Gierke](http://olivergierke.de/2013/01/whoops-where-did-my-architecture-go/)
+- [[Talk] GOTO 2016 • Whoops! Where Did My Architecture Go? -- Oliver Gierke](https://www.youtube.com/watch?v=v1XIcgFUIEw)
+
+### JavaFX
+- [[Video] JavaFX Programming, Part I -- Paul Anderson](https://www.safaribooksonline.com/library/view/javafx-programming-part/9780133409864/) 
+
+### Gradle
+- [[Tutorial] Getting Started With Gradle: Creating a Multi-Project Build -- Petri Kainulainen](https://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-multi-project-build/)

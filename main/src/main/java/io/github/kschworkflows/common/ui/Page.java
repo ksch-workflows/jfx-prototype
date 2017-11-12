@@ -1,5 +1,6 @@
-package io.github.kschworkflows.ui;
+package io.github.kschworkflows.common.ui;
 
+import io.github.kschworkflows.ClinicalServiceApplication;
 import javafx.scene.layout.Pane;
 
 public abstract class Page {

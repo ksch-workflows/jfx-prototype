@@ -1,4 +1,4 @@
-package io.github.kschworkflows.services;
+package io.github.kschworkflows.patient;
 
 public class Patient {
 

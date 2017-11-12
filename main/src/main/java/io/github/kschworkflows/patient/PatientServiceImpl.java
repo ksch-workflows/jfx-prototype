@@ -1,11 +1,11 @@
-package io.github.kschworkflows.services;
+package io.github.kschworkflows.patient;
 
 import com.experimental.openmrs.OpenMRS;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class PatientServiceImpl implements PatientService {
+class PatientServiceImpl implements PatientService {
 
     private OpenMRS openMRS;
 

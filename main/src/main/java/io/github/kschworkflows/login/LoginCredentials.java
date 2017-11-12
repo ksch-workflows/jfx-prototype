@@ -1,6 +1,6 @@
-package io.github.kschworkflows.services;
+package io.github.kschworkflows.login;
 
-public class LoginCredentials {
+class LoginCredentials {
 
     private static LoginCredentials instance;
 
@@ -11,7 +11,9 @@ public class LoginCredentials {
     private String openMRSUrl;
 
     protected LoginCredentials() {
-
+        openMRSUrl = "https://ksch/openmrs";
+        userName = "superman";
+        password = "Admin123";
     }
 
     public static LoginCredentials getInstance() {

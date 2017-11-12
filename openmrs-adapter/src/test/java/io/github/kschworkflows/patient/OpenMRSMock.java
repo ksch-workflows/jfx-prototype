@@ -1,4 +1,4 @@
-package io.github.kschworkflows.services;
+package io.github.kschworkflows.patient;
 
 import com.experimental.openmrs.OpenMRS;
 import com.experimental.openmrs.resources.PatientResource;

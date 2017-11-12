@@ -1,5 +1,8 @@
-package io.github.kschworkflows.ui;
+package io.github.kschworkflows.login;
 
+import io.github.kschworkflows.ClinicalServiceApplication;
+import io.github.kschworkflows.common.ui.Page;
+import io.github.kschworkflows.registration.RegistrationPage;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.control.Button;

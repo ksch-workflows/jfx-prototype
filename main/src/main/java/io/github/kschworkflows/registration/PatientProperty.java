@@ -1,10 +1,10 @@
-package io.github.kschworkflows.ui;
+package io.github.kschworkflows.registration;
 
-import io.github.kschworkflows.services.Patient;
+import io.github.kschworkflows.patient.Patient;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class PatientProperty {
+class PatientProperty {
 
     private final StringProperty id = new SimpleStringProperty();
     private final StringProperty displayName = new SimpleStringProperty();
