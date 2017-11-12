@@ -17,5 +17,9 @@ The following resources are useful to understand the Why and How for the source 
 ### JavaFX
 - [[Video] JavaFX Programming, Part I -- Paul Anderson](https://www.safaribooksonline.com/library/view/javafx-programming-part/9780133409864/) 
 
+### Guice
+- [[Book] Google Guice: Agile Lightweight Dependency Injection Framework -- Robbie Vanbrabant](https://www.safaribooksonline.com/library/view/google-guice-agile/9781590599976/)
+- [[Blog] Creating Google Guice Modules with Java 6’s ServiceLoader -- Matthias Wessendorf](https://matthiaswessendorf.wordpress.com/2008/01/21/creating-google-guice-modules-with-java-6s-serviceloader/)
+
 ### Gradle
 - [[Tutorial] Getting Started With Gradle: Creating a Multi-Project Build -- Petri Kainulainen](https://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-multi-project-build/)
