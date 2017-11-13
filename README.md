@@ -8,7 +8,7 @@ java -jar ./main/build/jfx/app/project-jfx.jar
 ```
 
 ## References
-The following resources are recommended from an understanding of the Why and How within in this project.
+The following resources are recommended for an understanding of the Why and How within in this project.
 
 ### Architecture
 - [[Article] Hexagonal architecture -- Alistair Cockburn](http://alistair.cockburn.us/Hexagonal+architecture)
