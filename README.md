@@ -2,6 +2,7 @@
 
 ### Dependencies
 - JDK 9
+- OpenMRS installed via the Bahmni installer
 
 ## Compilation
 
