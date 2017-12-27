@@ -1,5 +1,8 @@
 # K.S.C.H. Clinical Service
 
+### Dependencies
+- JDK 9
+
 ## Compilation
 
 ```
