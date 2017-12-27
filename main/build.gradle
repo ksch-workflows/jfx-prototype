@@ -19,7 +19,7 @@ dependencies {
 }
 
 jfx {
-    mainClass = 'io.github.kschworkflows.ui.ClinicalServiceApplication'
+    mainClass = 'io.github.kschworkflows.ClinicalServiceApplication'
     vendor = 'Experimental Software'
 }
 
