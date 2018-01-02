@@ -10,13 +10,10 @@
 *.ipr
 *.iws
 
-# Package Files
+# Java Package Files
 *.jar
 *.war
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
 # Gradle
 build/
